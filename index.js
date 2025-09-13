@@ -14,7 +14,6 @@ import { initWhatsApp, sendWhatsAppMessage, sendEmergencyContacts, sendHealthAle
 import { initVoiceSystem, processVoiceHealthQuery, textToSpeech, cleanupTempFiles } from "./bot/voice.js";
 import multer from "multer";
 import fs from "fs";
-import db from "./database/db.js" ;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
