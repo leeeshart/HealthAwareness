@@ -14,7 +14,7 @@ import { initWhatsApp, sendWhatsAppMessage, sendEmergencyContacts, sendHealthAle
 import { initVoiceSystem, processVoiceHealthQuery, textToSpeech, cleanupTempFiles } from "./bot/voice.js";
 import multer from "multer";
 import fs from "fs";
-import db from "./database/db.js" ;
+// db import removed - not used as default export
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -343,4 +343,4 @@ app.listen(PORT, async () => {
     console.log('⚠️ OpenAI credentials not found. Voice features disabled.');
     console.log('💡 Add OPENAI_API_KEY to enable voice recognition');
   }
-}) 
+}); 
