@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMS Health Alert Bot - Odisha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div id="chat-box" class="chat-box">
+      <div class="bot-msg">📱 <strong>SMS Health Alert Bot - Odisha</strong><br><br>
+        🔹 <strong>SMS Instructions:</strong><br>
+        Send SMS to our Twilio number with commands like:<br>
+        • <b>HELP</b> - Show all commands & emergency numbers<br>
+        • <b>FIRSTAID burns</b> - Get first aid instructions<br>
+        • <b>PREVENT malaria</b> - Prevention tips<br>
+        • <b>ALERT cholera Bhubaneswar</b> - Report outbreaks<br>
+        • <b>STATS</b> - View outbreak statistics<br><br>
+        
+        🔹 <strong>Demo Mode:</strong><br>
+        Test commands below to see how SMS responses work:
+      </div>
+    </div>
+
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder="Type SMS command (e.g., HELP)...">
+      <button onclick="sendMessage()">Send SMS</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
